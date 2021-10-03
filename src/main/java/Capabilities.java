@@ -11,11 +11,12 @@ import io.appium.java_client.remote.MobileCapabilityType;
 public class Capabilities {
 
 	public static AndroidDriver<AndroidElement> baseCapabilities() throws MalformedURLException {
-		// TODO Auto-generated method stub
+		
+		// TODO Declare DesiredCapabilites to automate with android OS
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
-		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "shady1");
+		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy J5");
 
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator1");
 
@@ -23,7 +24,7 @@ public class Capabilities {
 		
 		capabilities.setCapability("chromedriverExecutable","C:\\webdrivers\\chromedriver.exe");
 		
-		AndroidDriver<AndroidElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+		AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		
 		return driver;
 	}

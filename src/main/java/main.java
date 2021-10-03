@@ -13,7 +13,7 @@ public class main extends Capabilities{
 		// TODO satrt app
 		AndroidDriver<AndroidElement> driver=baseCapabilities();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//		driver.get("https://www.youtube.com/");
+		driver.get("https://www.youtube.com/");
 
 //		driver.findElement(By.cssSelector(".navbar-toggler")).click();
 //
